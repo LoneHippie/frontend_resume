@@ -165,6 +165,8 @@
                 color: $color-white;
                 margin-bottom: 2rem;
 
+                animation: fadeInFromLeft 650ms ease-out;
+
                 @include respond(phone1) {
                     font-size: 3.75rem;
                     letter-spacing: initial;
@@ -247,12 +249,15 @@
     width: 100%;
     height: 95vh;
 
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 65.5%, 0% 78.2%);
     clip-path: polygon(0 0, 100% 0, 100% 65.5%, 0% 78.2%);
 
     @include respond(tablet3) {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 60.5%, 0% 74.75%);
         clip-path: polygon(0 0, 100% 0, 100% 60.5%, 0% 74.75%);
     }
     @include respond(phone1) {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 55.25%, 0% 67.4%);
         clip-path: polygon(0 0, 100% 0, 100% 55.25%, 0% 67.4%);
     }
 
@@ -332,7 +337,6 @@
         height: 100%;
 
         border-left: 1.5px solid $color-white;
-        // border-right: 1.5px solid $color-white;
 
         z-index: 1;
     }
@@ -393,4 +397,20 @@
 
 .margin-medium {
     margin-bottom: 6rem !important;
+}
+
+@keyframes fadeInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-15rem);
+    }
+    50% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 0.2;
+    }
+    100% {
+        opacity: 1;
+    }
 }

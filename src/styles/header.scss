@@ -7,7 +7,6 @@
     top: 0;
     left: 0;
     padding: 0.5rem 2rem;
-    // background: $color-primary-light;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -29,6 +28,7 @@
         height: 87.5vh;
     }
 
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
 
     background: radial-gradient(circle, $color-primary 42%, $color-primary-dark-1 100%);

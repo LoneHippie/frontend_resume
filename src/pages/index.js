@@ -61,9 +61,9 @@ const IndexPage = () => {
 
             <section className="index-body">
 
-                <section className="index-about" id="about">
+                <section className="index-about">
 
-                    <span className="title title--white">Independent Developer</span>
+                    <span className="title title--white" id="about">Independent Developer</span>
                     <p className="text-block">
                         I'm Jordan, a web developer experienced in designing and creating responsive websites. I enjoy creating high performance software with complex UI logic and functionality.
                     </p>
