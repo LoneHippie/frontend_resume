@@ -1,0 +1,13 @@
+.nav-desktop {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    & > * {
+        font-size: 3rem;
+        color: #FFFFFF;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}

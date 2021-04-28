@@ -1,0 +1,396 @@
+@import "variables";
+@import "mixins";
+
+.title-container {
+    position: absolute;
+    width: 80%;
+    margin-top: -65.5vh;
+    left: 50%;
+    transform: translateX(-50%);
+
+    border-bottom: 1.5px solid $color-white;
+
+    @include respond(tablet3) {
+        width: 90%;
+    }
+    @include respond(phone1) {
+        margin-top: -55.5vh;
+    }
+
+    z-index: 200;
+
+    & > h1 {
+        color: $color-white;
+        text-align: left;
+        font-size: 5.5rem;
+        font-family: $font-head;
+        letter-spacing: 0.6rem;
+
+        @include respond(tablet3) {
+            font-size: 5rem;
+            letter-spacing: 0.4rem;
+        }
+        @include respond(phone1) {
+            font-size: 4.5rem;
+            letter-spacing: 0.325rem;
+        }
+        @include respond(phone3) {
+            font-size: 4rem;
+            letter-spacing: 0.25rem;
+        }
+    }
+}
+
+.hero {
+    position: absolute;
+    margin-top: -56vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 100rem;
+    border: 1.5px solid $color-white;
+
+    @include respond(tablet3) {
+        margin-top: -52vh; //maybe
+        width: 90.05%;
+    }
+    @include respond(phone1) {
+        margin-top: -45vh;
+    }
+    @include respond(phone3) {
+        height: 90rem;
+    }
+}
+
+.hero-text-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    &__cta {
+        position: relative;
+        height: 55%;
+        display: flex;
+        flex-direction: column;
+
+        padding-left: 5rem;
+
+        & > a {
+            display: inline-block;
+            width: 22rem;
+            position: absolute;
+            bottom: 0;
+            padding: 1.5rem;
+            text-align: center;
+            text-decoration: none;
+            font-family: $font-head;
+            color: $color-primary-light;
+            font-size: 2.5rem;
+            font-weight: 500;
+            border-radius: 8px;
+            border: 2px solid $color-primary-light;
+            background: linear-gradient(to top right,
+                rgba($background-dark, 0.8),
+                rgba($color-primary-dark-1, 0.2)
+            );
+        }
+    }
+
+    .cta-display {
+        width: 100%;
+        padding-top: 3rem;
+
+        @include respond(phone3) {
+            padding-top: 1rem;
+        }
+
+        &__shape {
+            position: relative;
+            width: 25rem;
+            height: 25rem;
+            float: left;
+
+            -webkit-shape-outside: circle(50% at 50% 50%);
+            shape-outside: circle(50% at 50% 50%);
+
+            overflow: hidden;
+            border-radius: 100%;
+            box-shadow: 2px 2px 8px black;
+
+            transform: translateX(-2rem);
+
+            @include respond(tablet3) {
+                height: 20rem;
+                width: 20rem;
+            }
+            @include respond(phone3) {
+                height: 18rem;
+                width: 18rem;
+                transform: translateX(-3.5rem);
+            }
+        }
+
+        &__image {
+            height: 25rem;
+            width: 25rem;
+
+            transform: scale(1.1);
+
+            @include respond(tablet3) {
+                height: 20rem;
+                width: 20rem;
+            }
+            @include respond(phone3) {
+                height: 18.5rem;
+                width: 18.5rem;
+            }
+
+            backface-visibility: hidden;
+        }
+
+        &__caption {
+            display: none;
+        }
+
+        &__text {
+
+            & > h2 {
+                font-size: 4rem;
+                letter-spacing: 0.4rem;
+                color: $color-white;
+                margin-bottom: 2rem;
+
+                @include respond(phone1) {
+                    font-size: 3.75rem;
+                    letter-spacing: initial;
+                }
+                @include respond(phone2) {
+                    &:first-child {
+                        margin-bottom: 13rem;
+                    }
+                }
+                @include respond(phone3) {
+                    margin-bottom: 1rem;
+                    font-size: 3.5rem;
+                    &:first-child {
+                        transform: translateX(-1rem);
+                        margin-bottom: 13rem;
+                    }
+                }
+                @include respond(phone4) {
+                    font-size: 3.1rem;
+                }
+            }
+        }
+    }
+
+    &__middle {
+        height: 19rem;
+        filter: drop-shadow(-2px 2px 6px $color-black);
+
+        @include respond(phone3) {
+            height: 15rem;
+        }
+    }
+
+    &__bottom {
+        height: 35%;
+        display: grid;
+        align-content: center;
+        padding-bottom: 5rem;
+
+        @include respond(phone3) {
+            height: 50%;
+            padding-bottom: 2rem;
+        }
+
+        & > h3 {
+            font-size: 4rem;
+            color: $color-white;
+            letter-spacing: 0.3rem;
+            text-align: center;
+
+            @include respond(phone3) {
+                font-size: 3.5rem;
+            }
+
+            &:not(:last-child) {
+                padding-bottom: 2rem;
+            }
+        }
+    }
+}
+
+.hero-image-container {
+    display: inline-block;
+
+    width: 100%;
+
+    background: linear-gradient(173deg,
+        rgba($background-dark, 0.9) 0%,
+        rgba($background-dark, 0.7) 40%,
+        rgba($background-dark, 0.5) 75.5%,
+        transparent 76.7%
+    );
+
+    z-index: 200;
+}
+
+.hero--image {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 95vh;
+
+    clip-path: polygon(0 0, 100% 0, 100% 65.5%, 0% 78.2%);
+
+    @include respond(tablet3) {
+        clip-path: polygon(0 0, 100% 0, 100% 60.5%, 0% 74.75%);
+    }
+    @include respond(phone1) {
+        clip-path: polygon(0 0, 100% 0, 100% 55.25%, 0% 67.4%);
+    }
+
+    z-index: -1 !important;
+}
+
+.index-body {
+    color: $color-white;
+}
+
+.index-about {
+    display: block;
+
+    margin-top: -20vh !important;
+    padding-top: 60rem;
+    padding-bottom: 10rem;
+
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+
+    @include respond(tablet3) {
+        padding-top: 55rem;
+    }
+    @include respond(phone1) {
+        padding-top: 65rem;
+    }
+
+    border: 1.5px solid $color-white;
+}
+
+.index-projects {
+    position: relative;
+    background: radial-gradient(circle, $color-primary 42%, $color-primary-dark-1 100%);
+    transform: skewY(-7deg);
+    margin-top: -10rem !important;
+    
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+    // padding-left: 10%;
+    // padding-right: 10%;
+
+    & > :not(.index-projects) {
+        transform: skewY(7deg);
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        height: 100%;
+
+        border-left: 1.5px solid $color-white;
+        border-right: 1.5px solid $color-white;
+
+        z-index: -1;
+    }
+}
+
+.index-contact {
+    position: relative;
+
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-left: 5%;
+        width: 0.5%;
+        height: 100%;
+
+        border-left: 1.5px solid $color-white;
+        // border-right: 1.5px solid $color-white;
+
+        z-index: 1;
+    }
+
+    &__wrapper {
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+.highlight {
+    color: $color-primary-light;
+}
+
+.title {
+    display: inline-block;
+    width: 100%;
+    font-family: $font-head;
+    font-size: 5.5rem;
+    border-bottom: 1.5px solid $color-white;
+    margin-bottom: 2rem;
+
+    @include respond(phone1) {
+        font-size: 4.5rem;
+    }
+}
+
+.title-section {
+    display: inline-block;
+    width: 100%;
+    font-family: $font-head;
+    text-transform: uppercase;
+    font-size: 6.5rem;
+    text-align: center;
+    margin-bottom: 5rem;
+
+    @include respond(phone1) {
+        font-size: 5rem;
+    }
+    @include respond(phone4) {
+        font-size: 4.6rem;
+    }
+}
+
+.text-block {
+    color: rgba($color-white, 0.8);
+    font-size: 3rem;
+    line-height: 3.8rem;
+    max-width: 85%;
+    margin-bottom: 2rem;
+
+    @include respond(phone1) {
+        max-width: 95%;
+    }
+}
+
+.margin-medium {
+    margin-bottom: 6rem !important;
+}
