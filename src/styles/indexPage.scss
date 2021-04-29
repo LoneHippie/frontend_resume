@@ -72,6 +72,8 @@
     width: 100%;
     height: 100%;
 
+    overflow: hidden;
+
     &__cta {
         position: relative;
         height: 55%;
@@ -103,89 +105,95 @@
 
     .cta-display {
         width: 100%;
-        padding-top: 3rem;
+        // padding-top: 3rem;
 
         @include respond(phone3) {
             padding-top: 1rem;
         }
 
-        &__shape {
-            position: relative;
-            width: 25rem;
-            height: 25rem;
-            float: left;
-
-            -webkit-shape-outside: circle(50% at 50% 50%);
-            shape-outside: circle(50% at 50% 50%);
-
-            overflow: hidden;
-            border-radius: 100%;
-            box-shadow: 2px 2px 8px black;
-
-            transform: translateX(-2rem);
-
-            @include respond(tablet3) {
-                height: 20rem;
-                width: 20rem;
-            }
-            @include respond(phone3) {
-                height: 18rem;
-                width: 18rem;
-                transform: translateX(-3.5rem);
-            }
-        }
-
         &__image {
-            height: 25rem;
-            width: 25rem;
+            position: absolute;
+            top: -8.75%;
+            left: -8.75%;
+            height: 50rem;
+            width: 50rem;
+
+            z-index: 1;
+
+            border-radius: 50%;
+
+            filter: drop-shadow(2px 2px 8px $color-black);
 
             transform: scale(1.1);
 
+            @include respond(tablet2) {
+                height: 41rem;
+                width: 41rem;
+            }
             @include respond(tablet3) {
-                height: 20rem;
-                width: 20rem;
+                height: 35rem;
+                width: 35rem;
             }
             @include respond(phone3) {
-                height: 18.5rem;
-                width: 18.5rem;
+                height: 30rem;
+                width: 30rem;
             }
 
             backface-visibility: hidden;
         }
 
-        &__caption {
-            display: none;
-        }
-
         &__text {
+            width: 75%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding-right: 2rem;
+            padding-top: 1rem;
+
+            text-align: right;
+
+            text-shadow: 2.5px 2.5px 6px $color-black;
+
+            @include respond(tablet1) {
+                padding-right: 1rem;
+            }
+            @include respond(tablet2) {
+                padding-right: 0.5rem;
+            }
+
+            z-index: 1000;
 
             & > h2 {
-                font-size: 4rem;
+                font-size: 5.5rem;
                 letter-spacing: 0.4rem;
                 color: $color-white;
                 margin-bottom: 2rem;
+                transform: translateX(-0.5rem);
+                z-index: 1000;
 
                 animation: fadeInFromLeft 650ms ease-out;
+
+                // &.step-2 {
+                //     animation-delay: 650ms;
+                // }
+                // &.step-3 {
+                //     animation-delay: 1300ms;
+                // }
+
+                @include respond(tablet1) {
+                    font-size: 4rem;
+                }
 
                 @include respond(phone1) {
                     font-size: 3.75rem;
                     letter-spacing: initial;
                 }
-                @include respond(phone2) {
-                    &:first-child {
-                        margin-bottom: 13rem;
-                    }
-                }
                 @include respond(phone3) {
-                    margin-bottom: 1rem;
-                    font-size: 3.5rem;
-                    &:first-child {
-                        transform: translateX(-1rem);
-                        margin-bottom: 13rem;
-                    }
+                    font-size: 3rem;
                 }
                 @include respond(phone4) {
-                    font-size: 3.1rem;
+                    font-size: 2.6rem;
+                    margin-bottom: 1.5rem;
                 }
             }
         }
@@ -402,13 +410,7 @@
 @keyframes fadeInFromLeft {
     0% {
         opacity: 0;
-        transform: translateX(-15rem);
-    }
-    50% {
-        opacity: 0;
-    }
-    60% {
-        opacity: 0.2;
+        transform: translateX(20rem);
     }
     100% {
         opacity: 1;

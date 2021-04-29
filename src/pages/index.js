@@ -26,20 +26,16 @@ const IndexPage = () => {
                         
                         <div className="cta-display">
 
-                            <figure className="cta-display__shape">
-                                <img className="cta-display__image" src={'static/me-2.jpg'} alt="Jordan Helebechuk"></img>
-                                <figcaption className="cta-display__caption">Jordan</figcaption>
-                            </figure>
+                            <img className="cta-display__image" src={'static/me-2.jpg'} alt="Jordan Helebechuk"></img>
 
                             <div className="cta-display__text">
-                                <h2>Front&nbsp;End Dev</h2>
-                                <h2>Programmer</h2>
-                                <h2>Web Designer</h2>
+                                <h2 className="step-1">Front&nbsp;End Dev</h2>
+                                <h2 className="step-2">Programmer</h2>
+                                <h2 className="step-3">Web Designer</h2>
                             </div>
                             
                         </div>
 
-                        {/* <a href='#'>LEARN MORE</a> */}
                     </div>
 
                     <img className="hero-text-container__middle" src={'static/web-programming.svg'} alt="web development"></img>
