@@ -14,7 +14,16 @@ const Header = () => {
 
     return (
         <>    
-            <div className="header-background"></div>
+            <div className="header-background">
+                <div className="bg-gradient"></div>
+                <div className="bg-video">
+                    <video className="bg-video__content" autoPlay loop muted={true}>
+                        <source src="static/video-star-particles.mp4" type="video/mp4" />
+                        <source src="static/video-star-particles.webm" type="video/webm" />
+                        Video format not supported
+                    </video>
+                </div>
+            </div>
 
             <header className="header-container">
 
