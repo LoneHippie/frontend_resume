@@ -54,7 +54,7 @@ const ContactForm = () => {
                         <input 
                             className="form__button"
                             type="submit"
-                            value="SEND EMAIL &rarr;"
+                            value="Send Email"
                             form="contact-form"
                         ></input>
                     </div>

@@ -24,9 +24,9 @@ const projectCards = () => {
                     </p>
 
                     <div className="project-card__info--tech">
-                        <img src={'static/html5.svg'} alt="HTML"></img>
-                        <img src={'static/sass.svg'} alt="sass"></img>
-                        <img src={'static/javascript.svg'} alt="javascript"></img>
+                        <img src={'static/html5.svg'} alt="HTML5" title="HTML5"></img>
+                        <img src={'static/sass.svg'} alt="Sass/SCSS" title="Sass/SCSS"></img>
+                        <img src={'static/javascript.svg'} alt="Javascript" title="Javascript"></img>
                     </div>
 
                     <div className="project-card__info--buttons">
@@ -55,10 +55,10 @@ const projectCards = () => {
                     </p>
 
                     <div className="project-card__info--tech tech-long">
-                        <img src={'static/react.svg'} alt="ReactJS"></img>
-                        <img src={'static/sass.svg'} alt="sass"></img>
-                        <img src={'static/node-js.svg'} alt="NodeJS"></img>
-                        <img src={'static/mongodb.svg'} alt="MongoDB"></img>
+                        <img src={'static/react.svg'} alt="ReactJS" title="ReactJS"></img>
+                        <img src={'static/sass.svg'} alt="Sass/SCSS" title="Sass/SCSS"></img>
+                        <img src={'static/node-js.svg'} alt="NodeJS" title="NodeJS"></img>
+                        <img src={'static/mongodb.svg'} alt="MongoDB" title="MongoDB"></img>
                     </div>
 
                     <div className="project-card__info--buttons">
@@ -87,9 +87,9 @@ const projectCards = () => {
                     </p>
 
                     <div className="project-card__info--tech">
-                        <img src={'static/html5.svg'} alt="HTML"></img>
-                        <img src={'static/css3.svg'} alt="CSS"></img>
-                        <img src={'static/javascript.svg'} alt="javascript"></img>
+                        <img src={'static/html5.svg'} alt="HTML5" title="HTML5"></img>
+                        <img src={'static/css3.svg'} alt="CSS" title="CSS"></img>
+                        <img src={'static/javascript.svg'} alt="Javascript" title="Javascript"></img>
                     </div>
 
                     <div className="project-card__info--buttons">
