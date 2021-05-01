@@ -10,7 +10,7 @@
         rgba($color-primary-light, 0.9) 0%,
         rgba($color-primary-dark-1, 0.85) 49.75%,
         transparent 50%),
-        url('/static/background-coast.jpg');
+        url('/static/background-tlv-2.jpg');
 
     background-position: center;
     background-size: cover;
@@ -27,14 +27,14 @@
             rgba($color-primary-light, 0.9) 0%,
             rgba($color-primary-dark-1, 0.85) 64.75%,
             transparent 65%),
-            url('/static/background-coast.jpg');
+            url('/static/background-tlv-2.jpg');
     }
     @include respond(tablet2) {
         background-image: linear-gradient(105deg,
             rgba($color-primary-light, 0.9) 0%,
             rgba($color-primary-dark-1, 0.85) 74.75%,
             transparent 75%),
-            url('/static/background-coast.jpg');
+            url('/static/background-tlv-2.jpg');
     }
 
     &__form {

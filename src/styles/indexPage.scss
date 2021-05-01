@@ -242,9 +242,9 @@
     width: 100%;
 
     background: linear-gradient(173deg,
-        rgba($background-dark, 0.9) 0%,
-        rgba($background-dark, 0.7) 40%,
-        rgba($background-dark, 0.5) 75.5%,
+        rgba($background-dark, 0.3) 0%,
+        rgba($background-dark, 0.3) 40%,
+        rgba($background-dark, 0.2) 75.5%,
         transparent 76.7%
     );
 
@@ -256,7 +256,6 @@
     display: block;
     width: 100%;
     height: 95vh;
-
 
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 65.5%, 0% 78.2%);
     clip-path: polygon(0 0, 100% 0, 100% 65.5%, 0% 78.2%);

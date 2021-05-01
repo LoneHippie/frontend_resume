@@ -17,7 +17,7 @@ const IndexPage = () => {
             <section className="hero">
 
                 <div className="hero-image-container">
-                    <img className="hero--image" src={'static/background-coast.jpg'} alt="hero coast"></img>
+                    <img className="hero--image" src={'static/background-tlv-2.jpg'} alt="hero river"></img>
                 </div>
 
                 <div className="hero-text-container">
