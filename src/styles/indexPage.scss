@@ -257,6 +257,8 @@
     width: 100%;
     height: 95vh;
 
+    filter: blur(1.2px);
+
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 65.5%, 0% 78.2%);
     clip-path: polygon(0 0, 100% 0, 100% 65.5%, 0% 78.2%);
 
@@ -306,8 +308,6 @@
     
     padding-top: 10rem;
     padding-bottom: 5rem;
-    // padding-left: 10%;
-    // padding-right: 10%;
 
     & > :not(.index-projects) {
         transform: skewY(7deg);

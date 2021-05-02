@@ -70,14 +70,11 @@
     font-weight: 600;
     width: 40%;
 
+    color: $color-white;
+
     font-family: $font-head;
 
     @include respond(phone1) {
         width: 55%;
-    }
-
-    & > * {
-        text-decoration: none;
-        color: #FFFFFF;
     }
 }

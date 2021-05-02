@@ -9,7 +9,7 @@ const Footer = () => {
 
             <div className="contact-info">
                 <span>(+972)53-715-4696</span>
-                <span>jordan.hlebechuk123@gmail.com</span>
+                <span>lonehippie.dev@gmail.com</span>
             </div>
         </footer>
     )

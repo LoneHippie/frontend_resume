@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'gatsby';
 
 import DesktopNav from './desktopNav';
 import MobileNav from './mobileNav';
@@ -27,7 +26,7 @@ const Header = () => {
 
             <header className="header-container">
 
-                <h1 className="header--logo"><Link to="/">JORDAN H</Link></h1>
+                <h1 className="header--logo">JORDAN H</h1>
 
                 {
                     screenWidth > 750 ? (

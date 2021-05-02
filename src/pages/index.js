@@ -7,7 +7,12 @@ import IconGrid from './../components/iconGrid';
 import ProjectCards from './../components/projectCards';
 import ContactForm from './../components/contactForm';
 
+import useWindowDimensions from '../hooks/useWindowDimensions';
+
 const IndexPage = () => {
+
+    const { screenWidth } = useWindowDimensions();
+
     return (
         <Layout>
             <div className="title-container">
@@ -26,7 +31,11 @@ const IndexPage = () => {
                         
                         <div className="cta-display">
 
-                            <img className="cta-display__image" src={'static/me-2.jpg'} alt="Jordan Helebechuk"></img>
+                            <img 
+                                className="cta-display__image" 
+                                src={screenWidth > 750 ? 'static/portrait-large.jpg' : 'static/portrait-small.jpg'} 
+                                alt="Jordan Helebechuk"
+                            ></img>
 
                             <div className="cta-display__text">
                                 <h2 className="step-1">Front&nbsp;End Dev</h2>

@@ -93,7 +93,7 @@ const projectCards = () => {
                     </div>
 
                     <div className="project-card__info--buttons">
-                        <a target="_blank" rel="noreferrer" href="https://lonehippie.github.io/oregon/region/coast.html">Live Site</a>
+                        <a target="_blank" rel="noreferrer" href="https://lonehippie.github.io/oregon/index.html">Live Site</a>
                         <a target="_blank" rel="noreferrer" href="https://github.com/LoneHippie/oregon">Repo</a>
                     </div>
 
