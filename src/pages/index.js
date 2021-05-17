@@ -47,7 +47,7 @@ const IndexPage = () => {
 
                     </div>
 
-                    <img className="hero-text-container__middle" src={'static/web-programming.svg'} alt="web development"></img>
+                    <img className="hero-text-container__middle" src={'static/jh-logo-2.png'} alt="web development"></img>
 
                     <div className="hero-text-container__bottom">
                         <h3>

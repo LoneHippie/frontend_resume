@@ -97,6 +97,11 @@
 
     &__item {
         margin: 1rem;
+
+        & > * {
+            border: none;
+            background: none;
+        }
     }
 
     &__link {

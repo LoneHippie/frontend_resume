@@ -14,9 +14,9 @@ const desktopNav = () => {
 
     return (
         <nav className="nav-desktop">
-            <span onClick={() => scrollSmoothTo('about')}>About</span>
-            <span onClick={() => scrollSmoothTo('projects')}>Projects</span>
-            <span onClick={() => scrollSmoothTo('contact-me')}>Contact</span>
+            <button aria-label="go to about section" onClick={() => scrollSmoothTo('about')}>About</button>
+            <button aria-label="go to projects section" onClick={() => scrollSmoothTo('projects')}>Projects</button>
+            <button aria-label="go to contact section" onClick={() => scrollSmoothTo('contact-me')}>Contact</button>
         </nav>
     )
 };
