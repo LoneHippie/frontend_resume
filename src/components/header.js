@@ -1,4 +1,5 @@
 import React from 'react';
+import Particles from 'react-particles-js';
 
 import DesktopNav from './desktopNav';
 import MobileNav from './mobileNav';
@@ -14,14 +15,31 @@ const Header = () => {
     return (
         <>    
             <div className="header-background">
-                <div className="bg-gradient"></div>
-                <div className="bg-video">
-                    <video className="bg-video__content" autoPlay loop muted={true}>
-                        <source src="static/video-star-particles.mp4" type="video/mp4" />
-                        <source src="static/video-star-particles.webm" type="video/webm" />
-                        Video format not supported
-                    </video>
-                </div>
+                <Particles params={{
+                    "particles": {
+                        "number": {
+                            "value": 36
+                        },
+                        "size": {
+                            "value": 3.5,
+                            "random": true,
+
+                            "anim": {
+                                "enable": true,
+                                "speed": 2,
+                                "size_min": 0.5
+                            }
+                        },
+                        "move": {
+                            "random": true,
+                            "speed": 1.5
+                        },
+                        "line_linked": {
+                            "enable": true,
+                            "distance": 50
+                        }
+                    }
+                }}/>
             </div>
 
             <header className="header-container">

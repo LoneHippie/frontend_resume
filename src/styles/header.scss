@@ -34,35 +34,14 @@
     z-index: 100;
 }
 
-.bg-gradient {
-    position: absolute;
-    top: 0;
-    object-fit: cover;
-    width: 100%;
+#tsparticles {
     height: 100%;
-    background: radial-gradient(circle, rgba($color-primary, 0.6) 30%, rgba($color-primary-dark-2, 0.7) 100%);
-    
-    background-size: cover;
-
-    z-index: -9;
+    width: 100%;
+    background: radial-gradient(circle, $color-primary 30%, $color-primary-dark-2 100%);
 }
 
-.bg-video {
-    position: absolute;
-    top: 0;
-    left: 0;
+.tsparticles-canvas-el {
     height: 100%;
-    width: 100%;
-    opacity: 1;
-    overflow: hidden;
-
-    z-index: -10;
-
-    &__content {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-    }
 }
 
 .header--logo {
