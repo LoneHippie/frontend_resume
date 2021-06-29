@@ -2,8 +2,6 @@ import React, { useEffect, useRef } from 'react';
 
 import useWindowDimensions from '../hooks/useWindowDimensions';
 
-// import { projectObserverDesktop, projectObserverMobile } from '../observers/sectionObservers';
-
 import './../styles/projectCards.scss';
 
 const ProjectCards = () => {
@@ -12,12 +10,13 @@ const ProjectCards = () => {
 
     const projectsRef = useRef();
 
+    //adds initial animation on project cards with intersection observer. Has case for desktop and mobile
     useEffect(() => {
         const projectOptions = {
             root: null,
             rootMargin: '-25px'
         };
-        
+
         if (screenWidth > 750) {
             const sectionProjects = projectsRef.current;
 
@@ -26,7 +25,6 @@ const ProjectCards = () => {
                     if (!entry.isIntersecting) { return };
             
                     entry.target.classList.add('loaded-desktop');
-            
                     observer.unobserve(entry.target);
                 });
             }, projectOptions);
@@ -39,9 +37,7 @@ const ProjectCards = () => {
                 entries.forEach(entry => {
                     if (!entry.isIntersecting) { return };
             
-                    console.log(entry.target)
                     entry.target.classList.add('loaded-mobile');
-            
                     observer.unobserve(entry.target);
                 });
             }, projectOptions);

@@ -1,13 +1,12 @@
 import React, { useEffect, useRef } from 'react';
 
-// import { iconObserver } from '../observers/sectionObservers';
-
 import './../styles/iconGrid.scss';
 
 const IconGrid = () => {
 
     const iconRef = useRef();
 
+    //adds initial animation on icon grid via intersection observer
     useEffect(() => {
         const sectionIcons = iconRef.current;
 
