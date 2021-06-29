@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 
 import useWindowDimensions from '../hooks/useWindowDimensions';
 
-import { projectObserverDesktop, projectObserverMobile } from '../observers/sectionObservers';
+// import { projectObserverDesktop, projectObserverMobile } from '../observers/sectionObservers';
 
 import './../styles/projectCards.scss';
 
@@ -13,12 +13,38 @@ const ProjectCards = () => {
     const projectsRef = useRef();
 
     useEffect(() => {
+        const projectOptions = {
+            root: null,
+            rootMargin: '-25px'
+        };
+        
         if (screenWidth > 750) {
             const sectionProjects = projectsRef.current;
+
+            const projectObserverDesktop = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (!entry.isIntersecting) { return };
+            
+                    entry.target.classList.add('loaded-desktop');
+            
+                    observer.unobserve(entry.target);
+                });
+            }, projectOptions);
 
             projectObserverDesktop.observe(sectionProjects);
         } else {
             const sectionProjects = projectsRef.current.querySelectorAll('.project-card');
+
+            const projectObserverMobile = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (!entry.isIntersecting) { return };
+            
+                    console.log(entry.target)
+                    entry.target.classList.add('loaded-mobile');
+            
+                    observer.unobserve(entry.target);
+                });
+            }, projectOptions);
 
             sectionProjects.forEach(section => {
                 projectObserverMobile.observe(section);

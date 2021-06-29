@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 
-import { iconObserver } from '../observers/sectionObservers';
+// import { iconObserver } from '../observers/sectionObservers';
 
 import './../styles/iconGrid.scss';
 
@@ -10,6 +10,21 @@ const IconGrid = () => {
 
     useEffect(() => {
         const sectionIcons = iconRef.current;
+
+        const iconOptions = {
+            root: null,
+            rootMargin: '-50px'
+        };
+
+        const iconObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) { return };
+        
+                entry.target.classList.add('loaded');
+                
+                observer.unobserve(entry.target);
+            });
+        }, iconOptions);
 
         iconObserver.observe(sectionIcons);
     }, []);
