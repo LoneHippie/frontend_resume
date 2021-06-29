@@ -21,7 +21,7 @@ const Header = () => {
                             "value": 47
                         },
                         "size": {
-                            "value": 3.5,
+                            "value": 3.75,
                             "random": true,
 
                             "anim": {
@@ -36,7 +36,7 @@ const Header = () => {
                         },
                         "line_linked": {
                             "enable": true,
-                            "distance": 50
+                            "distance": 80
                         }
                     }
                 }}/>
