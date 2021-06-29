@@ -1,18 +1,40 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
+
+import useWindowDimensions from '../hooks/useWindowDimensions';
+
+import { projectObserverDesktop, projectObserverMobile } from '../observers/sectionObservers';
 
 import './../styles/projectCards.scss';
 
-const projectCards = () => {
+const ProjectCards = () => {
+
+    const { screenWidth } = useWindowDimensions();
+
+    const projectsRef = useRef();
+
+    useEffect(() => {
+        if (screenWidth > 750) {
+            const sectionProjects = projectsRef.current;
+
+            projectObserverDesktop.observe(sectionProjects);
+        } else {
+            const sectionProjects = projectsRef.current.querySelectorAll('.project-card');
+
+            sectionProjects.forEach(section => {
+                projectObserverMobile.observe(section);
+            });
+        }
+    }, [screenWidth]);
 
     return (
-        <section className="project-container">
+        <section className="project-container" ref={projectsRef}>
 
-            <div className="project-card">
+            <div className="project-card" id="project-1">
 
                 <div className="project-card__mockups">
-                    <img className="project-card__mockups--laptop" src={'static/mockup-laptop-bnf.png'} alt="BNF laptop mockup"></img>
-                    <img className="project-card__mockups--tablet" src={'static/mockup-tablet-bnf.png'} alt="BNF tablet mockup"></img>
-                    <img className="project-card__mockups--phone" src={'static/mockup-phone-bnf.png'} alt="BNF phone mockup"></img>
+                    <img className="project-card__mockups--laptop" src={'static/mockup-laptop-bnf.png'} alt="BNF laptop mockup" loading="lazy"></img>
+                    <img className="project-card__mockups--tablet" src={'static/mockup-tablet-bnf.png'} alt="BNF tablet mockup" loading="lazy"></img>
+                    <img className="project-card__mockups--phone" src={'static/mockup-phone-bnf.png'} alt="BNF phone mockup" loading="lazy"></img>
 
                     <span className="project-card__mockups--title">BNF MVP</span>
                 </div>
@@ -38,12 +60,12 @@ const projectCards = () => {
 
             </div>
 
-            <div className="project-card">
+            <div className="project-card" id="project-2">
 
                 <div className="project-card__mockups">
-                    <img className="project-card__mockups--laptop" src={'static/mockup-laptop-dd.png'} alt="Drinkdex laptop mockup"></img>
-                    <img className="project-card__mockups--tablet" src={'static/mockup-tablet-dd.png'} alt="Drinkdex tablet mockup"></img>
-                    <img className="project-card__mockups--phone" src={'static/mockup-phone-dd.png'} alt="Drinkdex phone mockup"></img>
+                    <img className="project-card__mockups--laptop" src={'static/mockup-laptop-dd.png'} alt="Drinkdex laptop mockup" loading="lazy"></img>
+                    <img className="project-card__mockups--tablet" src={'static/mockup-tablet-dd.png'} alt="Drinkdex tablet mockup" loading="lazy"></img>
+                    <img className="project-card__mockups--phone" src={'static/mockup-phone-dd.png'} alt="Drinkdex phone mockup" loading="lazy"></img>
 
                     <span className="project-card__mockups--title">Drinkdex</span>
                 </div>
@@ -70,12 +92,12 @@ const projectCards = () => {
 
             </div>
 
-            <div className="project-card">
+            <div className="project-card" id="project-3">
 
                 <div className="project-card__mockups">
-                    <img className="project-card__mockups--laptop" src={'static/mockup-laptop-oregon.png'} alt="Oregon laptop mockup"></img>
-                    <img className="project-card__mockups--tablet" src={'static/mockup-tablet-oregon.png'} alt="Oregon tablet mockup"></img>
-                    <img className="project-card__mockups--phone" src={'static/mockup-phone-oregon.png'} alt="Oregon phone mockup"></img>
+                    <img className="project-card__mockups--laptop" src={'static/mockup-laptop-oregon.png'} alt="Oregon laptop mockup" loading="lazy"></img>
+                    <img className="project-card__mockups--tablet" src={'static/mockup-tablet-oregon.png'} alt="Oregon tablet mockup" loading="lazy"></img>
+                    <img className="project-card__mockups--phone" src={'static/mockup-phone-oregon.png'} alt="Oregon phone mockup" loading="lazy"></img>
 
                     <span className="project-card__mockups--title">Oregon Hikes</span>
                 </div> 
@@ -105,4 +127,4 @@ const projectCards = () => {
     )
 };
 
-export default projectCards;
+export default ProjectCards;

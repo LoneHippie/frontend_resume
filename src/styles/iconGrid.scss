@@ -19,6 +19,15 @@
 
         margin-bottom: 4rem;
     }
+    opacity: 0;
+
+    transition: all 600ms;
+
+    &.loaded {
+        opacity: 1;
+
+        transition: all 400ms;
+    }
 
     &--card {
         height: 12rem;
@@ -34,6 +43,7 @@
         @include respond(phone4) {
             height: 8rem;
         }
+
         display: flex;
         flex-direction: column;
         justify-content: space-between;

@@ -2,7 +2,7 @@ import React from 'react';
 
 import './../styles/desktopNav.scss';
 
-const desktopNav = () => {
+const DesktopNav = () => {
 
     function scrollSmoothTo(elementId) {
         const element = document.getElementById(elementId);
@@ -21,4 +21,4 @@ const desktopNav = () => {
     )
 };
 
-export default desktopNav;
+export default DesktopNav;

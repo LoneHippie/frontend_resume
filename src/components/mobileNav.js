@@ -2,7 +2,7 @@ import React from 'react';
 
 import './../styles/mobileNav.scss';
 
-const mobileNav = () => {
+const MobileNav = () => {
 
     function scrollSmoothTo(elementId) {
         const element = document.getElementById(elementId);
@@ -40,4 +40,4 @@ const mobileNav = () => {
     )
 }
 
-export default mobileNav;
+export default MobileNav;
