@@ -54,28 +54,27 @@ const ProjectCards = () => {
             <div className="project-card" id="project-1">
 
                 <div className="project-card__mockups">
-                    <img className="project-card__mockups--laptop" src={'static/mockup-laptop-bnf.png'} alt="BNF laptop mockup" loading="lazy"></img>
-                    <img className="project-card__mockups--tablet" src={'static/mockup-tablet-bnf.png'} alt="BNF tablet mockup" loading="lazy"></img>
-                    <img className="project-card__mockups--phone" src={'static/mockup-phone-bnf.png'} alt="BNF phone mockup" loading="lazy"></img>
+                    <img className="project-card__mockups--laptop" src={'static/mockup-laptop-masterdex.png'} alt="masterdex laptop mockup" loading="lazy"></img>
+                    <img className="project-card__mockups--tablet" src={'static/mockup-tablet-masterdex.png'} alt="masterdex tablet mockup" loading="lazy"></img>
+                    <img className="project-card__mockups--phone" src={'static/mockup-phone-masterdex.png'} alt="masterdex phone mockup" loading="lazy"></img>
 
-                    <span className="project-card__mockups--title">BNF MVP</span>
+                    <span className="project-card__mockups--title">Masterdex</span>
                 </div>
 
                 <div className="project-card__info">
 
                     <p className="text-block">
-                        A mockup for Bear Necessities Fitness, an online workout subscription service made with vanilla Javascript, HTML and SCSS
+                        A stylish interactable Pokedex PWA with detailed data on Pokemon from the game series. Optimized for performance, data fetched from pokeapi
                     </p>
 
-                    <div className="project-card__info--tech">
-                        <img src={'static/html5.svg'} alt="HTML5" title="HTML5"></img>
+                    <div className="project-card__info--tech tech-short">
+                        <img src={'static/react.svg'} alt="ReactJS" title="ReactJS"></img>
                         <img src={'static/sass.svg'} alt="Sass/SCSS" title="Sass/SCSS"></img>
-                        <img src={'static/javascript.svg'} alt="Javascript" title="Javascript"></img>
                     </div>
 
                     <div className="project-card__info--buttons">
-                        <a target="_blank" rel="noreferrer" href="https://lonehippie.github.io/bnf_mvp/">Live Site</a>
-                        <a target="_blank" rel="noreferrer" href="https://github.com/LoneHippie/bnf_mvp">Repo</a>
+                        <a target="_blank" rel="noreferrer" href="https://masterdex.netlify.app/">Live Site</a>
+                        <a target="_blank" rel="noreferrer" href="https://github.com/LoneHippie/masterdex_v2">Repo</a>
                     </div>
 
                 </div>
