@@ -43,6 +43,10 @@ const IconGrid = () => {
                 <span>Javascript</span>
             </div>
             <div className="icon-grid--card">
+                <img src={'static/typescript.svg'} alt="typescript" loading="lazy"></img>
+                <span>TypeScript</span>
+            </div>
+            <div className="icon-grid--card">
                 <img src={'static/sass.svg'} alt="sass" loading="lazy"></img>
                 <span>Sass/SCSS</span>
             </div>
@@ -61,6 +65,10 @@ const IconGrid = () => {
             <div className="icon-grid--card">
                 <img src={'static/gatsby.svg'} alt="gatsbyJS" loading="lazy"></img>
                 <span>GatsbyJS</span>
+            </div>
+            <div className="icon-grid--card">
+                <img src={'static/figma.svg'} alt="figma" loading="lazy"></img>
+                <span>Figma</span>
             </div>
             <div className="icon-grid--card">
                 <img src={'static/git.svg'} alt="git" loading="lazy"></img>

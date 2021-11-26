@@ -326,6 +326,10 @@
     background: radial-gradient(circle, $color-primary 42%, $color-primary-dark-1 100%);
     transform: skewY(-7deg);
     margin-top: -10rem !important;
+
+    @include respond(tablet1) {
+        margin-top: -6rem !important;
+    }
     
     padding-top: 10rem;
     padding-bottom: 5rem;

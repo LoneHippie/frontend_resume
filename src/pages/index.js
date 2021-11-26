@@ -73,7 +73,7 @@ const IndexPage = () => {
                         I'm Jordan, a web developer experienced in designing and creating responsive websites. I enjoy creating high performance software with complex UI logic and functionality.
                     </p>
                     <p className="text-block margin-medium">
-                        I have experience in creating websites, web apps and APIs for full stack applications using technologies like <span className="highlight">React, Node, MongoDB and Gastby</span>.
+                        I have experience in creating websites, web apps and APIs for full stack applications using technologies like <span className="highlight">React, Node, MongoDB and Gatsby</span>.
                     </p>
 
                     <span className="title title--white">Shiny Things</span>

@@ -7,7 +7,7 @@
     grid-template-columns: repeat(5, auto);
     grid-row-gap: 4rem;
 
-    margin-bottom: 6rem;
+    margin-bottom: 10rem;
 
     @include respond(phone1) {
         grid-template-columns: repeat(4, auto);

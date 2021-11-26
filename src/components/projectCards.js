@@ -54,27 +54,29 @@ const ProjectCards = () => {
             <div className="project-card" id="project-1">
 
                 <div className="project-card__mockups">
-                    <img className="project-card__mockups--laptop" src={'static/mockup-laptop-masterdex.png'} alt="masterdex laptop mockup" loading="lazy"></img>
-                    <img className="project-card__mockups--tablet" src={'static/mockup-tablet-masterdex.png'} alt="masterdex tablet mockup" loading="lazy"></img>
-                    <img className="project-card__mockups--phone" src={'static/mockup-phone-masterdex.png'} alt="masterdex phone mockup" loading="lazy"></img>
+                    <img className="project-card__mockups--laptop" src={'static/mockup-laptop-anireka.png'} alt="anireka laptop mockup" loading="lazy"></img>
+                    <img className="project-card__mockups--tablet" src={'static/mockup-tablet-anireka.png'} alt="anireka tablet mockup" loading="lazy"></img>
+                    <img className="project-card__mockups--phone" src={'static/mockup-phone-anireka.png'} alt="anireka phone mockup" loading="lazy"></img>
 
-                    <span className="project-card__mockups--title">Masterdex</span>
+                    <span className="project-card__mockups--title">AniReka</span>
                 </div>
 
                 <div className="project-card__info">
 
                     <p className="text-block">
-                        A stylish interactable Pokedex PWA with detailed data on Pokemon from the game series. Optimized for performance, data fetched from pokeapi
+                        A website/PWA for finding new anime recommendations and getting detailed info on different series/movies using React, TS and GraphQL
                     </p>
 
-                    <div className="project-card__info--tech tech-short">
+                    <div className="project-card__info--tech tech-long">
                         <img src={'static/react.svg'} alt="ReactJS" title="ReactJS"></img>
+                        <img src={`static/typescript.svg`} alt="TypeScript" title="TypeScript"></img>
                         <img src={'static/sass.svg'} alt="Sass/SCSS" title="Sass/SCSS"></img>
+                        <img src={`static/figma.svg`} alt="figma" title="figma"></img>
                     </div>
 
                     <div className="project-card__info--buttons">
-                        <a target="_blank" rel="noreferrer" href="https://masterdex.netlify.app/">Live Site</a>
-                        <a target="_blank" rel="noreferrer" href="https://github.com/LoneHippie/masterdex_v2">Repo</a>
+                        <a target="_blank" rel="noreferrer" href="http://www.anireka.com">Live Site</a>
+                        <a target="_blank" rel="noreferrer" href="https://github.com/LoneHippie/anireka">Repo</a>
                     </div>
 
                 </div>
@@ -116,28 +118,28 @@ const ProjectCards = () => {
             <div className="project-card" id="project-3">
 
                 <div className="project-card__mockups">
-                    <img className="project-card__mockups--laptop" src={'static/mockup-laptop-oregon.png'} alt="Oregon laptop mockup" loading="lazy"></img>
-                    <img className="project-card__mockups--tablet" src={'static/mockup-tablet-oregon.png'} alt="Oregon tablet mockup" loading="lazy"></img>
-                    <img className="project-card__mockups--phone" src={'static/mockup-phone-oregon.png'} alt="Oregon phone mockup" loading="lazy"></img>
+                    <img className="project-card__mockups--laptop" src={'static/mockup-laptop-platform.png'} alt="platform laptop mockup" loading="lazy"></img>
+                    <img className="project-card__mockups--tablet" src={'static/mockup-tablet-platform.png'} alt="platform tablet mockup" loading="lazy"></img>
+                    <img className="project-card__mockups--phone" src={'static/mockup-phone-platform.png'} alt="platform phone mockup" loading="lazy"></img>
 
-                    <span className="project-card__mockups--title">Oregon Hikes</span>
+                    <span className="project-card__mockups--title">Platform Mag</span>
                 </div> 
 
                 <div className="project-card__info">
 
                     <p className="text-block">
-                        An older project made for curating hikes around Oregon made with vanilla Javascipt, HTML and CSS    
+                        A freelance project for a political news site/blog using Gatsby, GraphQL and Contentful CMS  
                     </p>
 
                     <div className="project-card__info--tech">
-                        <img src={'static/html5.svg'} alt="HTML5" title="HTML5"></img>
-                        <img src={'static/css3.svg'} alt="CSS" title="CSS"></img>
-                        <img src={'static/javascript.svg'} alt="Javascript" title="Javascript"></img>
+                        <img src={'static/gatsby.svg'} alt="GatsbyJS" title="GatsbyJS"></img>
+                        <img src={'static/sass.svg'} alt="sass" title="sass"></img>
+                        <img src={'static/figma.svg'} alt="Figma" title="Figma"></img>
                     </div>
 
                     <div className="project-card__info--buttons">
-                        <a target="_blank" rel="noreferrer" href="https://lonehippie.github.io/oregon/index.html">Live Site</a>
-                        <a target="_blank" rel="noreferrer" href="https://github.com/LoneHippie/oregon">Repo</a>
+                        <a target="_blank" rel="noreferrer" href="https://theplatformmag.netlify.app">Live Site</a>
+                        <a target="_blank" rel="noreferrer" href="https://github.com/LoneHippie/the-platform-mag">Repo</a>
                     </div>
 
                 </div>
