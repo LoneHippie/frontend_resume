@@ -75,7 +75,7 @@ const ProjectCards = () => {
                     </div>
 
                     <div className="project-card__info--buttons">
-                        <a target="_blank" rel="noreferrer" href="http://www.anireka.com">Live Site</a>
+                        <a target="_blank" rel="noreferrer" href="https://www.anireka.com">Live Site</a>
                         <a target="_blank" rel="noreferrer" href="https://github.com/LoneHippie/anireka">Repo</a>
                     </div>
 
@@ -138,7 +138,7 @@ const ProjectCards = () => {
                     </div>
 
                     <div className="project-card__info--buttons">
-                        <a target="_blank" rel="noreferrer" href="https://theplatformmag.netlify.app">Live Site</a>
+                        <a target="_blank" rel="noreferrer" href="https://www.theplatformmag.com">Live Site</a>
                         <a target="_blank" rel="noreferrer" href="https://github.com/LoneHippie/the-platform-mag">Repo</a>
                     </div>
 
