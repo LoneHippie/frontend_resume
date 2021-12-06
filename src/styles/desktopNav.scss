@@ -11,5 +11,13 @@
         border: none;
         text-decoration: underline;
         cursor: pointer;
+
+        & > a {
+            color: #FFFFFF;
+        }
+    }
+
+    & > button > a {
+        color: #FFFFFF;
     }
 }

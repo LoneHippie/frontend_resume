@@ -44,7 +44,16 @@ const Header = () => {
 
             <header className="header-container">
 
-                <h1 className="header--logo">JORDAN H</h1>
+                <div className="header__cta">
+                    <a href="https://www.github.com/LoneHippie" target="_blank" rel="noreferrer">
+                        <img src={'static/github.svg'} alt="github" />
+                    </a>
+                    <h1 className="header--logo">
+                        <a href="https://www.github.com/LoneHippie" target="_blank" rel="noreferrer">
+                            LONE&nbsp;HIPPIE
+                        </a>
+                    </h1>
+                </div>
 
                 {
                     screenWidth > 750 ? (

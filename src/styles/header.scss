@@ -57,3 +57,33 @@
         width: 55%;
     }
 }
+
+.header__cta {
+    width: 40%;
+    @include respond(phone1) {
+        width: 55%;
+    }
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+
+    & > a > img {
+        height: 5rem;
+        width: 5rem;
+        margin-right: 1rem;
+    }
+
+    & > h1 {
+        font-size: 3rem;
+        font-weight: 600;
+
+        color: $color-white;
+
+        font-family: $font-head;
+
+        & > a {
+            color: $color-white;
+        }
+    }
+}

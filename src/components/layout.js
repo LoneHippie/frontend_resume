@@ -17,9 +17,9 @@ const Layout = (props) => {
         <main className="layout-container">
 
             <Helmet htmlAttributes={{ lang: 'en' }}>
-                <title>Jordan Hlebechuk</title>
+                <title>Jordan Hlebechuk | Web Developer</title>
                 <link rel="icon" href={favicon} />
-                <meta name="title" content="Jordan Hlebechuk" />
+                <meta name="title" content="Jordan Hlebechuk | Web Developer" />
                 <meta name="description" content="Jordan Hlebechuk, professional web and software developer for hire" />
             </Helmet>
 

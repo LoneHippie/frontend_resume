@@ -70,15 +70,15 @@ const IndexPage = () => {
 
                     <span className="title title--white" id="about">Independent Developer</span>
                     <p className="text-block">
-                        I'm Jordan, a web developer experienced in designing and creating responsive websites. I enjoy creating high performance software with complex UI logic and functionality.
+                        I'm Jordan, a self taught web developer experienced in designing and creating responsive websites and web apps. I enjoy designing UI and creating/architecting high performance software with complex logic and functionality.
                     </p>
                     <p className="text-block margin-medium">
-                        I have experience in creating websites, web apps and APIs for full stack applications using technologies like <span className="highlight">React, Node, MongoDB and Gatsby</span>.
+                        I have experience in creating websites, PWAs, web apps and APIs for full stack applications or freelance JAMstack using technologies like <span className="highlight">React, NodeJS, TypeScript, MongoDB and Gatsby</span>.
                     </p>
 
                     <span className="title title--white">Shiny Things</span>
                     <p className="text-block margin-medium">
-                        Here are the tools I use daily in order to design, program and deploy websites, whether it be for personal projects or commericial clients
+                        Here are the tools I use daily in order to design, program and deploy websites, whether it be for personal projects or freelancing for my clients
                     </p>
 
                     <IconGrid />
@@ -104,7 +104,7 @@ const IndexPage = () => {
                         </p>
                         <span className="title">Want to Hire Me?</span>
                         <p className="text-block margin-medium">
-                            Good news, I'm available for <span className="highlight">full-time employment!</span> Feel free to contact me by email via the form below or by WhatsApp.
+                            Good news, I'm available for <span className="highlight">full-time employment!</span> Feel free to check out my resume through the navigation menu or contact me by email via the form below or by WhatsApp.
                         </p>
                     </div>
 

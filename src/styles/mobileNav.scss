@@ -125,6 +125,18 @@
             color: $color-primary;
             transform: translateX(1rem);
         }
+
+        & > a {
+            color: $color-white;
+            text-decoration: none;
+
+            &:hover,
+            &:active {
+                background-position: 100%;
+                color: $color-primary;
+                transform: translateX(1rem);
+            }
+        }
     }
 
     //FUNCTIONALITY

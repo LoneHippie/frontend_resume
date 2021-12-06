@@ -128,7 +128,7 @@ const ProjectCards = () => {
                 <div className="project-card__info">
 
                     <p className="text-block">
-                        A freelance project for a political news site/blog using Gatsby, GraphQL and Contentful CMS  
+                        A freelance project for a political news site/blog using Gatsby, GraphQL and Contentful CMS with Netlify webhooks  
                     </p>
 
                     <div className="project-card__info--tech">
