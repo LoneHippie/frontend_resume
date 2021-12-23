@@ -55,6 +55,14 @@ const IconGrid = () => {
                 <span>ReactJS</span> 
             </div>
             <div className="icon-grid--card">
+                <img src={'static/react-native.svg'} alt="React Native" loading="lazy"></img>
+                <span>React Native</span>
+            </div>
+            <div className="icon-grid--card">
+                <img src={'static/redux.svg'} alt="Redux" loading="lazy"></img>
+                <span>Redux</span>
+            </div>
+            <div className="icon-grid--card">
                 <img src={'static/node-js.svg'} alt="nodeJS" loading="lazy"></img>
                 <span>NodeJS</span>
             </div>

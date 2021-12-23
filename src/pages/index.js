@@ -68,12 +68,15 @@ const IndexPage = () => {
 
                 <section className="index-about">
 
-                    <span className="title title--white" id="about">Independent Developer</span>
+                    <span className="title title--white" id="about">About Me</span>
                     <p className="text-block">
-                        I'm Jordan, a self taught web developer experienced in designing and creating responsive websites and web apps. I enjoy designing UI and creating/architecting high performance software with complex logic and functionality.
+                        I'm Jordan, a self taught web developer experienced in designing and creating responsive websites, web applications/PWAs and native mobile apps. I enjoy designing UI and creating/architecting high performance and accessible software with complex logic and functionality.
+                    </p>
+                    <p className="text-block">
+                        I have experience in creating websites, PWAs, web apps and APIs for full stack applications or freelance JAMstack using technologies like <span className="highlight">React, NodeJS, TypeScript, MongoDB and Gatsby</span>.
                     </p>
                     <p className="text-block margin-medium">
-                        I have experience in creating websites, PWAs, web apps and APIs for full stack applications or freelance JAMstack using technologies like <span className="highlight">React, NodeJS, TypeScript, MongoDB and Gatsby</span>.
+                        Recently I've expanded to <span className='highlight'>mobile development</span> with technologies like <span className='highlight'>React Native</span> as well as more complex and scalable projects by utilizing libraries such as <span className='highlight'>Redux</span>.
                     </p>
 
                     <span className="title title--white">Shiny Things</span>
