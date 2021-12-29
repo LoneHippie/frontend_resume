@@ -38,7 +38,7 @@ const IndexPage = () => {
                             ></img>
 
                             <div className="cta-display__text">
-                                <h2 className="step-1">Front&nbsp;End Dev</h2>
+                                <h2 className="step-1">Full&nbsp;Stack Dev</h2>
                                 <h2 className="step-2">Programmer</h2>
                                 <h2 className="step-3">Web Designer</h2>
                             </div>
@@ -70,7 +70,7 @@ const IndexPage = () => {
 
                     <span className="title title--white" id="about">About Me</span>
                     <p className="text-block">
-                        I'm Jordan, a self taught web developer experienced in designing and creating responsive websites, web applications/PWAs and native mobile apps. I enjoy designing UI and creating/architecting high performance and accessible software with complex logic and functionality.
+                        I'm Jordan, a highly driven self taught web developer experienced in designing and creating responsive websites, web applications/PWAs and native mobile apps. I enjoy designing UI and creating/architecting high performance and accessible software with complex logic and functionality.
                     </p>
                     <p className="text-block">
                         I have experience in creating websites, PWAs, web apps and APIs for full stack applications or freelance JAMstack using technologies like <span className="highlight">React, NodeJS, TypeScript, MongoDB and Gatsby</span>.
