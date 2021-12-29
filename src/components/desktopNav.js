@@ -17,7 +17,7 @@ const DesktopNav = () => {
             <button aria-label="go to about section" onClick={() => scrollSmoothTo('about')}>About</button>
             <button aria-label="go to projects section" onClick={() => scrollSmoothTo('projects')}>Projects</button>
             <button aria-label="go to contact section" onClick={() => scrollSmoothTo('contact-me')}>Contact</button>
-            <button aria-label="link to my resume"><a href="https://drive.google.com/file/d/1SqS8h5FLzWvp1-E1hpe8X9wff1dgvw1Q/view?usp=sharing" target="_blank" rel="noreferrer">Resume</a></button>
+            <button aria-label="link to my resume"><a href="https://drive.google.com/file/d/1R6sVY0Pi2ELCdK7b7EowTWXW68E1nwcD/view?usp=sharing" target="_blank" rel="noreferrer">Resume</a></button>
         </nav>
     )
 };
