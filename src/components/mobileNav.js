@@ -33,7 +33,7 @@ const MobileNav = () => {
                     <li className="nav-mobile__item"><button aria-label="go to about section" onClick={() => scrollSmoothTo('about')} className="nav-mobile__link">About</button></li>
                     <li className="nav-mobile__item"><button aria-label="go to projects section" onClick={() => scrollSmoothTo('projects')} className="nav-mobile__link">Projects</button></li>
                     <li className="nav-mobile__item"><button aria-label="go to contact section" onClick={() => scrollSmoothTo('contact-me')} className="nav-mobile__link">Contact</button></li>
-                    <li className="nav-mobile__item"><button aira-lable="link to my resume" className="nav-mobile__link"><a href="https://drive.google.com/file/d/1R6sVY0Pi2ELCdK7b7EowTWXW68E1nwcD/view?usp=sharing" target="_blank" rel="noreferrer">Resume</a></button></li>
+                    <li className="nav-mobile__item"><button aira-lable="link to my resume" className="nav-mobile__link"><a href="https://drive.google.com/file/d/1zLMSAjXnR6wrv8sThJLiN908nYbwli95/view?usp=sharing" target="_blank" rel="noreferrer">Resume</a></button></li>
                 </ul>
             </nav>
 
